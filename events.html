@@ -8,11 +8,20 @@
 </head>
 <body>
     <h1 onclick="alert('Hey miya vhay')">Exploring Events</h1>
-    <button onclick="handleClick()">Click me</button>
+    <button>Click me -0</button>
+    <button id="second">click me -1</button>
+    <button>click me -2</button>
+    <button id="lastPerson">click me -3</button>
     <script>
-        function handleClick(){
-            console.log(new Date)
-        }
+        document.getElementById('lastPerson').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'tomato';
+        })
+        // function handleClick(){
+        //     document.body.style.backgroundColor = 'cyan';
+        // }
+        // const secondButton = document.getElementById('second');
+         // secondButton.addEventListener('click', handleClick );
+        //secondButton.onclick = handleClick;
     </script>
 </body>
 </html>
